@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 2em;
+    background: #000;
+    border-bottom: 2px solid #3d72a4;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    opacity: 0.9;
+}
+
+
+
+
+
+.nav-name {
+       margin-left: 1rem;
+       font-family:  'Poppins', sans-serif;
+       color: #fff;
+       font-size: 1.5rem;
+    }
+
+nav {
+    flex-grow: 1;
+}
+
+.navbar-main {
+    color: #fff;
+}
+
+.navbar-list {
+    list-style: none;
+    padding-right: 3.5rem;
+    gap: 2em;
+    display: flex;
+}
+
+
+.navbar-list li:nth-of-type(1) {
+    margin-left: auto;
+}
+
+
+.navbar-list li a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: auto;
+    opacity: 0.7;
+}
+
+.navbar-list li a:hover {
+    color: #3d72a4;
+}
+
+form {
+    margin-left: auto;
+}
+
+.search {
+    margin: 0 2rem;
+    padding: 0.8rem;
+    font-size:1.2rem;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #fff;;
+    opacity: 0.9;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: #000;
+}
+
+
+
+main {
+    min-height: 1200px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main:nth-of-type(odd) {
+    background: #000;
+}
+
+.card {
+    max-width: 360px;
+    min-height: 750px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 #000;
+    margin: 1.5rem;
+    overflow: hidden;
+    opacity: 0.9;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.card h3 {
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 1rem 0 1rem;
+    opacity: 0.6;
+}
+
+.card ul {
+    margin-top: 1rem;
+    padding-left: 3.5rem;
+}
+
+.card ul li { 
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.card h4 {
+    padding-left: 2.5rem;
+}
+
+.card a {
+    text-decoration: none;
+    color:#3d72a4;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 20px;
+    left: 10;
+}
+
+.card a:hover {
+    font-size: 1.7rem;
+}
+
+@media  (max-width: 1130px) {
+    nav {
+        display: none;
+    }
+
+    .search {
+        margin: 1rem;
+        margin-left: auto;
+        opacity: 0.9
+    }
+}
